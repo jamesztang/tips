@@ -13,6 +13,7 @@
 		AB154ED11B9FF804008700D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB154ED01B9FF804008700D7 /* Images.xcassets */; };
 		AB154ED41B9FF804008700D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB154ED21B9FF804008700D7 /* LaunchScreen.xib */; };
 		AB154EE01B9FF804008700D7 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB154EDF1B9FF804008700D7 /* tipsTests.swift */; };
+		AB62ECF91BA01B9100DB6115 /* README in Resources */ = {isa = PBXBuildFile; fileRef = AB62ECF81BA01B9100DB6115 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		AB154ED91B9FF804008700D7 /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB154EDE1B9FF804008700D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB154EDF1B9FF804008700D7 /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		AB62ECF81BA01B9100DB6115 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		AB154EBB1B9FF804008700D7 = {
 			isa = PBXGroup;
 			children = (
+				AB62ECF81BA01B9100DB6115 /* README */,
 				AB154EC61B9FF804008700D7 /* tips */,
 				AB154EDC1B9FF804008700D7 /* tipsTests */,
 				AB154EC51B9FF804008700D7 /* Products */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB62ECF91BA01B9100DB6115 /* README in Resources */,
 				AB154ECF1B9FF804008700D7 /* Main.storyboard in Resources */,
 				AB154ED41B9FF804008700D7 /* LaunchScreen.xib in Resources */,
 				AB154ED11B9FF804008700D7 /* Images.xcassets in Resources */,
@@ -409,6 +413,7 @@
 				AB154EE51B9FF804008700D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB154EE61B9FF804008700D7 /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				AB154EE81B9FF804008700D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
