@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         totalLabel.text = "$0.00"
         billField.text = ""
         
-        var userDefaults = NSUserDefaults.standardUserDefaults()
+        let userDefaults = NSUserDefaults.standardUserDefaults()
 
         if (userDefaults.objectForKey("LastBillAmount") != nil) {
             billField.text = userDefaults.stringForKey("LastBillAmount")
@@ -38,11 +38,11 @@ class ViewController: UIViewController {
         }
         
         var tipPercentages = [0.18, 0.20, 0.25]
-        var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
-        var billAmount = NSString(string: billField.text).doubleValue
-        var tip = billAmount * tipPercentage
-        var total = billAmount + tip
+        let billAmount = NSString(string: billField.text!).doubleValue
+        let tip = billAmount * tipPercentage
+        let total = billAmount + tip
         
         tipLabel.text   = String(format: "%.2f", tip)
         totalLabel.text = String(format: "%.2f", total)
@@ -55,16 +55,16 @@ class ViewController: UIViewController {
 
     @IBAction func onEditingChanged(sender: AnyObject) {
         var tipPercentages = [0.18, 0.20, 0.25]
-        var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
-        var billAmount = NSString(string: billField.text).doubleValue
-        var tip = billAmount * tipPercentage
-        var total = billAmount + tip
+        let billAmount = NSString(string: billField.text!).doubleValue
+        let tip = billAmount * tipPercentage
+        let total = billAmount + tip
 
         tipLabel.text   = String(format: "%.2f", tip)
         totalLabel.text = String(format: "%.2f", total)
         
-        var userDefaults = NSUserDefaults.standardUserDefaults()
+        let userDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.setDouble(billAmount, forKey: "LastBillAmount")
         userDefaults.setInteger(tipControl.selectedSegmentIndex, forKey: "LastSegmentIndex")
         
